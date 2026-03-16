@@ -132,10 +132,10 @@
       color: #666;
     }
     /* card hover effect */
-    .service-card {
+    .service-card, .program-card {
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .service-card:hover {
+    .service-card:hover, .program-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 20px 25px -5px rgba(42,127,110,0.15);
     }
@@ -193,7 +193,8 @@
           </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="900" class="relative h-96 md:h-auto">
-          <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Physiotherapist helping patient stretch" class="rounded-2xl shadow-2xl object-cover w-full h-full">
+          <!-- Physiotherapy hero image: manual therapy session -->
+          <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Physiotherapist performing manual therapy on patient's leg" class="rounded-2xl shadow-2xl object-cover w-full h-full">
         </div>
       </div>
     </section>
@@ -239,7 +240,8 @@
           <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Led by Parul Deep, MPT (Ortho)</h2>
           <p class="text-deep-navy/70 mb-6">With over 8 years of experience in orthopaedic and sports rehabilitation, Parul brings a compassionate, hands‑on approach to every session. She believes in listening to your story and crafting a personalised plan that helps you return to the life you love — without pain.</p>
           <div class="flex items-center space-x-4">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" class="w-16 h-16 rounded-full object-cover" alt="Parul Deep, physiotherapist">
+            <!-- Professional headshot for Parul Deep -->
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" class="w-16 h-16 rounded-full object-cover" alt="Parul Deep, physiotherapist">
             <div><div class="font-semibold text-deep-navy">Parul Deep</div><div class="text-sm text-deep-navy/60">founder & senior physiotherapist • 8+ years</div></div>
           </div>
         </div>
@@ -250,7 +252,52 @@
       </div>
     </section>
 
-    <!-- EDUCATION / BLOG PREVIEW -->
+    <!-- NEW SECTION: Specialized Programs with your images -->
+    <section class="py-20 px-4 md:px-8 bg-warm-offwhite" data-aos="fade-up">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold mb-3">Specialized recovery programs</h2>
+          <p class="text-deep-navy/70 max-w-2xl mx-auto">Targeted, evidence‑based protocols designed for your specific needs — guided by our expert team.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Program 1: Post-Surgery Rehab (your image) -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm program-card border border-deep-teal/10">
+            <div class="h-56 overflow-hidden">
+              <img src="https://i.ibb.co/whYHtnDL/1773671687193.png" alt="Post-surgery rehabilitation session" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-deep-teal text-xl mb-2">Post‑surgery rehabilitation</h3>
+              <p class="text-deep-navy/70 text-sm">Regain strength and mobility after knee, hip, or shoulder surgery with our structured recovery plans.</p>
+            </div>
+          </div>
+          <!-- Program 2: Sports Injury Recovery (your image) -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm program-card border border-deep-teal/10">
+            <div class="h-56 overflow-hidden">
+              <img src="https://i.ibb.co/svL0btCv/1773671840188.png" alt="Sports injury rehabilitation" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-deep-teal text-xl mb-2">Sports injury recovery</h3>
+              <p class="text-deep-navy/70 text-sm">From ACL tears to runner's knee — get back to your sport safely with sport‑specific strengthening and conditioning.</p>
+            </div>
+          </div>
+          <!-- Program 3: Back & Neck Care (existing Unsplash image) -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm program-card border border-deep-teal/10">
+            <div class="h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Patient receiving manual therapy for back pain" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-deep-teal text-xl mb-2">Back & neck pain relief</h3>
+              <p class="text-deep-navy/70 text-sm">Hands‑on therapy and corrective exercises to alleviate chronic or acute spinal pain and improve posture.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a href="#" class="inline-flex items-center text-deep-navy font-medium border-b-2 border-deep-teal pb-1 transition hover:border-peach-accent">view all programs <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION / BLOG PREVIEW (movement insights) -->
     <section class="bg-peach-light py-20 px-4 md:px-8" data-aos="fade-up">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-wrap justify-between items-center mb-10">
